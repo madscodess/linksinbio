@@ -1,0 +1,77 @@
+/* color palette from https://www.color-hex.com/color-palettes */
+:root {
+  --darkest-color: #96957c;
+  --lightest-color:	#fff5ee; 
+  --highlight-color: #7d7c68;
+  --bright-color-1: #fdf5e6;
+  --bright-color-2: #faf0e6;
+  --bright-color-3: #faebd7;
+}
+
+body {
+  background: var(--darkest-color);
+  color: var(--lightest-color);
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.circular--shape {
+  position: relative;
+  overflow: hidden;
+  border: 5px solid var(--lightest-color);
+  border-radius: 50%;
+  margin: 0 auto;
+  width: 130px;
+  height: 130px;
+}
+
+.circular--shape img {
+  width: 100%;
+  height: auto;
+}
+
+.profile-picture {
+  display: inline;
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
+}
+
+a {
+  color: var(--lightest-color);
+  text-decoration: none;
+}
+
+.instagram {
+  margin: 10px 0;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.link-list-item {
+  background-color: var(--bright-color-1);
+  border: 3px solid var(--highlight-color);
+  box-sizing: border-box;
+  margin: 20px auto;
+  color: var(--highlight-color);
+  padding: 15px;
+  text-align: center;
+  transition: all 0.15s;
+  border-radius: 2px;
+}
+
+.link-list-item:hover
+{
+  background-color:var(--darkest-color);
+  color: white;
+  border-color: var(--lightest-color);
+  text-shadow: 0 0 2em var(--highlight-color);
+}
